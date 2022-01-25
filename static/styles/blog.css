@@ -1,0 +1,172 @@
+/* Content styles */
+ol {
+    counter-reset: ingredients;
+}
+  
+ol li {
+    counter-increment: ingredients;
+}
+  
+h5 {
+    font-family: 'Roboto Slab', serif;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #869281;
+}
+
+.circles {
+    list-style-type: circle;
+}
+.lines {
+    list-style-type:"-";
+}
+
+/* Left column styles*/
+.blog-header > .blog-header-wrapper > .blog-header-content > .left-column {
+    display: flex;
+    align-items: center;
+}
+
+.SBnav {
+    overflow: hidden;
+}
+  
+.SBnav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: 2px solid #869281;
+    padding: 20px;
+    width: 200px;
+    height: 4px;
+}
+  
+.SBnav .search-container button {
+    float: right;
+    color: #869281;
+    background-color: transparent;
+    padding: 6px 10px;
+    margin-top: 4px;
+    margin-right: 16px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+  
+.SBnav .search-container button:hover {
+    color: #cea135;
+    transition: 0.5s;
+}
+  
+@media screen and (max-width: 600px) {
+    .SBnav .search-container {
+      float: none;
+    }
+    .SBnav a, .SBnav input[type=text], .SBnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .SBnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+}
+
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #869281;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c6d6bf;
+    display: block;
+    transition: 0.3s;
+    }
+
+
+    .sidenav a:hover {
+    color: #cea135;
+    }
+
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+
+    #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: #869281;
+    }
+    #main:hover span {
+        color: #cea135;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+
+.blog-header > .blog-header-wrapper > .blog-header-content > .heading-wrapper {
+        background-color: #869281;
+        color: #c6d6bf;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        width: 300px;
+        padding: 10px;
+        text-align: center;
+        
+}
+
+/* Skewed header  */
+.blog-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.blog-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-10deg);
+    transform-origin:top left;
+    filter: brightness(80%);
+}
+
+.blog-header > .blog-header-wrapper {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+}

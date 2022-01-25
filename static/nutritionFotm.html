@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox as tiles</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/nutri.css">
+</head>
+<body>
+    <h1>Find your personalized plan</h1>
+    <div class="first">
+        <h3>What is your biological sex?</h3>
+        <section>
+            <div class="sex">
+                <input type="checkbox" name="sex" id="man">
+                <label for="man">
+                    <i class="fas fa-male"></i>
+                    <h6>Male</h6>
+                </label>
+            </div>
+            <div class="sex">
+                <input type="checkbox" name="sex" id="woman">
+                <label for="woman">
+                    <i class="fas fa-female"></i>
+                    <h6>Female</h6>
+                </label>
+            </div>
+        </section>
+    </div>
+
+    <h3> What is/are your diet preference(s)?</h3>
+    <section>
+        <div class="tile">
+            <input type="checkbox" name="DietaryPreferences" id="pref1">
+            <label for="pref1">
+                <i class="fas fa-seedling"></i>
+                <h6>Vegan</h6>
+            </label>
+        </div>
+        <div class="tile">
+            <input type="checkbox" name="DietaryPreferences" id="pref2">
+            <label for="pref2">
+                <i class="fas fa-leaf"></i>
+                <h6>Vegetarian</h6>
+            </label>
+        </div>
+        <div class="tile">
+            <input type="checkbox" name="DietaryPreferences" id="pref3">
+            <label for="pref3">
+                <i class="fas fa-bread-slice"></i>
+                <h6>Gluten Free</h6>
+            </label>
+        </div>
+        <div class="tile">
+            <input type="checkbox" name="DietaryPreferences" id="pref5">
+            <label for="pref5">
+                <i class="fas fa-coffee"></i>
+                <h6>Lactose Free</h6>
+            </label>
+        </div>
+        <div class="tile">
+            <input type="checkbox" name="DietaryPreferences" id="pref6">
+            <label for="pref6">
+                <i class="fas fa-egg"></i>
+                <h6>Egg Free</h6>
+            </label>
+        </div>
+    </section>
+
+    <!-- QUESTION THREE -->
+    <h3>How many hours do you sleep daily?</h3>
+    <div class="sleeping-hours">
+        <button id="decrement" onclick="counter(this)"> - </button>
+        <input type="number" min="2" max="12" step="1" value="8" id="my-input" readonly>
+        <button id="increment" onclick="counter(this)"> + </button>
+    </div>
+
+    <!-- QUESTION FOUR -->
+    <h3>How active are you during the day?</h3>
+    <h5>Excluding sports activities</h5>
+    <div class="optn">
+        <input type="checkBox" name="Option 1" id="optn1">
+        <label for="optn1">
+            <h4>Not very active</h4>
+            <h6>
+                <span>I sit a lot during the day</span>
+            </h6>
+        </label>
+    </div>
+    <div class="optn">
+        <input type="checkBox" name="Option 2" id="optn2">
+        <label for="optn2">
+            <h4>Quite active</h4>
+            <h6>
+                <span>I regularly move around</span>
+            </h6>
+        </label>
+    </div>
+    <div class="optn">
+        <input type="checkBox" name="Option 3" id="optn3">
+        <label for="optn3">
+            <h4>Very active</h4>
+            <h6>
+                <span>I'm always on the move</span>
+            </h6>
+        </label>
+    </div>
+    
+    <!-- QUESTION FIVE -->
+    <h7>How do you feel about food?</h7>
+    <div class="cOntainer">
+        <span class="material-icons" id="emoji">sentiment_satisfied</span>
+        <input type="range" min="0" max="4" vlaue="2" id="slider">
+    </div>
+    
+    <script src="moodSlider.js"></script>
+    <script src="counter.js"></script>
+
+</body>
+</html>

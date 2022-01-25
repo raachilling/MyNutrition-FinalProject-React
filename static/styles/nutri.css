@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f7ff;
+    font-family: 'Source Serif Pro', sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #869281;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 500px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+h3{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #858585;
+    margin-inline-start: 300px;
+    margin-inline-end: 0px;
+    margin-top: 290px;
+}
+.first > h3{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #858585;
+    margin-inline-start: 300px;
+    margin-inline-end: 0px;
+    margin-top: 15px;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.first section{
+    width: 100vmin;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sex{
+    height: 200px;
+    width: 170px;
+    position: relative;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    outline: none;
+    box-shadow: 15px 15px 25px rgba(2,28,53,0.05);
+}
+input[type="checkbox"]:after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111";
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+    color: #e2e6f3;
+}
+input[type="checkbox"]:hover{
+    transform: scale(1.08);
+}
+input[type="checkbox"]:checked{
+    border: 3px solid #cea135;
+}
+input[type="checkbox"]:checked:after{
+    font-weight: 900;
+    content: "\f058";
+    color: #cea135;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+label .fas{
+    font-size: 60px;
+    color: #858585;
+}
+input[type="checkbox"]:checked + label .fas{
+    animation: grow 0.5s;
+}
+@keyframes grow{
+    50%{
+        font-size: 80px;
+    }
+}
+
+/* second question */
+.tile{
+    height: 200px;
+    width: 170px;
+    position: relative;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    outline: none;
+    box-shadow: 15px 15px 25px rgba(2,28,53,0.05);
+}
+input[type="checkbox"]:after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111";
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+    color: #e2e6f3;
+}
+input[type="checkbox"]:hover{
+    transform: scale(1.08);
+}
+input[type="checkbox"]:checked{
+    border: 3px solid #cea135;
+}
+input[type="checkbox"]:checked:after{
+    font-weight: 900;
+    content: "\f058";
+    color: #cea135;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+label .fas{
+    font-size: 60px;
+    color: #858585;
+}
+input[type="checkbox"]:checked + label .fas{
+    animation: grow 0.5s;
+}
+@keyframes grow{
+    50%{
+        font-size: 80px;
+    }
+}
+label h6{
+    font-family: "Source Serif Pro",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7b7b93;
+    margin-top: 10px;
+}
+
+/* THIRD QUESTION */
+.sleeping-hours {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:103%;
+    left: 50%;
+    display: flex;
+    border-radius: 45px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    background-color: white;
+    color: #858585;
+}
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button {
+    color:#869281;
+    background-color:white;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+#decrement {
+    padding: 15px 5px 15px 25px;
+    border-radius: 45px 0 0 45px;
+}
+#increment {
+    padding: 15px 25px 15px 5px;
+    border-radius: 0 45px 45px 0;
+}
+
+/* FOURTH QUESTION */
+h5{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #858585;
+    margin-inline-start: 300px;
+    margin-inline-end: 0px;
+    margin-top: 10px;
+}
+.optn {
+    top:15px;
+    height:150px;
+    position: relative;
+}
+.optn > input[type="checkBox"]{
+ -webkit-appearance: none;
+ appearance: none;
+ height: 50%;
+ width: 40%;
+ left: 297px;
+ border-radius: 10px;
+ background-color: white;
+ position: absolute;
+ box-shadow: 7px 7px 15px rgba(2,28,53,0.08);
+ cursor: pointer;
+ outline: none;
+ border: none;
+}
+
+.optn label {
+    position: relative;
+    cursor: pointer;
+    top:-20px;
+    right: 300px;
+    bottom: 0;
+}
+h4 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: -24px;
+}
+h6 {
+    font-weight: 500;
+    margin-top: -13px;
+}
+
+.optn > input[type="checkbox"]:after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111";
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+    color: #e2e6f3;
+}
+.optn > input[type="checkbox"]:hover{
+    transform: scale(1.08);
+}
+.optn > input[type="checkbox"]:checked{
+    border: 3px solid #cea135;
+}
+.optn > input[type="checkbox"]:checked:after{
+    font-weight: 900;
+    content: "\f058";
+    color: #cea135;
+}
+
+/* QUESTION 5 */
+.cOntainer {
+    height: 30vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input[type="range"]{
+    width: 90vw;
+    height: 6px;
+    -webkit-appearance: none;
+    background-color:#858585;
+    border-radius: 6px;
+    outline: none;
+    margin-top: 60px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color:#858585;
+    border-radius: 50%;
+    box-shadow: 10px 15px 10px rgba(0,0,0,0.2);
+} 
+.material-icons {
+    font-size: 130px;
+    color: #cea135;
+}
+h7{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #858585;
+    margin-inline-start: 300px;
+    margin-inline-end: 0px;
+    margin-top: 100px;
+}
